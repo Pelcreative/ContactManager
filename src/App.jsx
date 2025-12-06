@@ -12,14 +12,14 @@ export default function App() {
       <Navbar />
       <div className="container mx-auto p-4">
         <Routes>
-          {/* Redirect root to /contacts */}
+          
           <Route path="/" element={<Navigate to="/contacts" replace />} />
 
-          {/* Auth routes */}
+         
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
 
-          {/* Protected contact routes */}
+          
           <Route
             path="/contacts"
             element={

@@ -13,7 +13,7 @@ export default function AddEditContact(){
 
   useEffect(() => {
     if (id) {
-      // fetch contact and populate
+      
       API.get("/contacts").then(res => {
         const c = res.data.find(x => x._id === id);
         if (c) {
